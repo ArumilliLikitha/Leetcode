@@ -8,14 +8,14 @@ public:
             {
                 zero++;
             }
-                while(zero>k)
+            if(zero>k)
+            {
+                if(nums[l]==0)
                 {
-                    if(nums[l]==0)
-                    {
-                        zero=zero-1;
-                    }
-                    l++;
+                    zero-=1;
                 }
+                l++;
+            }
             if(zero<=k)
             {
                 maxlen=max(maxlen,r-l+1);
